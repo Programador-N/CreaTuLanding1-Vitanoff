@@ -1,0 +1,63 @@
+Componentes de React:
+
+Crear los componentes básicos:
+NavBar
+CartWidget
+ItemListContainer
+Estructura de la Aplicación:
+
+Organización de los archivos dentro de la carpeta components.
+Renderizar NavBar e ItemListContainer en el componente App.
+Renderizar CartWidget dentro de NavBar.
+Uso de Props:
+
+Implementar props en ItemListContainer para enviar un mensaje de bienvenida.
+Comprender la importancia de las props en la comunicación entre componentes.
+Barra de Navegación:
+
+Incluir enlaces de navegación.
+Agregar el logo de la tienda.
+Incluir el widget del carrito de compras.
+Estilos:
+
+Considerar el uso de Bootstrap o librerías de UI de React para los estilos (opcional).
+Control de Versiones:
+
+Realizar "commit" y "push" del proyecto a GitHub.
+Asegurarse de que el nombre del repositorio siga el formato “CreaTuLanding1+Apellido”.
+Documentación:
+
+Incluir un enlace al último commit en GitHub.
+Criterios de Evaluación:
+
+Revisar los videos orientativos y criterios de evaluación proporcionados para asegurarte de cumplir con las expectativas.
+Asegúrate de seguir cada uno de estos puntos para que tu pre-entregable esté completo y bien estructurado. ¡Buena suerte! 🚀
+
+los componente los importo desde app.js
+
+Correcto, en React, los componentes se importan generalmente en el archivo App.js, que actúa como el componente principal de tu aplicación. Aquí tienes un resumen de cómo deberías hacerlo:
+
+Importar Componentes:
+
+En tu archivo App.js, debes importar los componentes que has creado. Por ejemplo:
+import NavBar from './components/NavBar';
+import CartWidget from './components/CartWidget';
+import ItemListContainer from './components/ItemListContainer';
+Renderizar Componentes:
+
+Una vez importados, puedes renderizarlos dentro del método render de tu componente App. Por ejemplo:
+function App() {
+  return (
+    <div>
+      <NavBar />
+      <ItemListContainer message="¡Bienvenido a nuestra tienda!" />
+      <CartWidget />
+    </div>
+  );
+}
+Uso de Props:
+
+Asegúrate de pasar las props necesarias a los componentes, como en el caso de ItemListContainer, donde envías un mensaje de bienvenida.
+Estructura del Proyecto:
+
+Asegúrate de que la estructura de carpetas y archivos sea clara, con todos los componentes organizados dentro de la carpeta components.
